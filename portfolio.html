@@ -7,7 +7,9 @@
                 background: grey;
                 color: rgb(45, 45, 45);
                 padding: 10px;
-                font-family: arial;
+                font-family: "Gill Sans", sans-serif;
+                border:5px;
+                border-radius: 25px;
             }
             header {
                 font-size: 1.5em;
@@ -25,6 +27,8 @@
                 margin: 0 auto;
                 display: flex;
                 padding: 10px;
+                border: 2px;
+                border-radius: 250px;
             }
             h1 {
                 display: flex;
@@ -47,16 +51,48 @@
             /* main container area beneath menu */
             main {
                 background: darkgrey;
-                display: flex;
+                display: block;
+                border: 75px;
+                border-radius: 100px; 
+                
             }
             .content {
+            
                 flex: 1;
                 padding: 15px;
-            }
+            } 
+                     /* portfolio styles */
+         .content h1 {
+             color: black;
+         }
+         
+         #portfolio {
+             list-style-type: none;
+             padding-left: 0;
+         }
+         
+         #portfolio li {
+             background: #fff;
+             padding: 10px;
+             border-radius: 10px;
+             margin-bottom: 10px;
+         }
+         
+         #portfolio li:hover {
+             background: #eee;
+         } 
+         
+         #portfolio a {
+             text-decoration: none;
+             color: #454545;
+         }
         </style>
     </head>
 
     <body>
+        <h2>Square CSS</h2>
+        <div class="square"></div>
+
         <div id="all-contents">
             <nav>
                     <h1>Demiran's website</h1>
