@@ -34,11 +34,9 @@ var circles = [];
         
 
         // TODO 3 / 7 : Call the drawCircle() function 
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        drawCircle();
+        for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++) {
+            drawCircle()
+        }
     
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -51,6 +49,7 @@ var circles = [];
         */
         function update() {
             // TODO 4 : Update the circle's position //
+            ///iterate:
             physikz.updatePosition(circles[0])
             physikz.updatePosition(circles[1])
             physikz.updatePosition(circles[2])
@@ -90,11 +89,11 @@ var circles = [];
                 circle.x = canvas.width;
             }
 // if the circle has gone past the TOP side of the screen then place it on the BOTTEM
-             if (circle.y < 0) {
+             if (circle.y > canvas.height) {
                  circle.y = 0;
             }
           // if the circle has gone past the BOTTEM side of the screen then place it on the TOP 
-            if (circle.y < 0) {
+            if (circle.y <  0) {
                 circle.y = canvas.height;
             }
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
