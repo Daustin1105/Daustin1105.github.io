@@ -9,7 +9,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: burlywood;
+			background-color: rgb(82, 211, 27);
 			font-size: 300%;
 			text-align: center;
 			display: block;
@@ -90,7 +90,7 @@
 
 
 			};
-
+			
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
@@ -101,10 +101,17 @@
 				
 				points = points + 1;
 
-				speed = speed + 3;
+				//
+				
+				
 
 				changeBoxText(points);
-				
+				if (speed >= 0) {
+					speed = speed + 3;
+				}
+				else {
+					speed = speed -3
+				}
 			};
 		})();
 	</script>
